@@ -1,0 +1,48 @@
+<main>
+
+<br/> 
+
+<div class="w3-container medi-yellow">
+            <h2>Personalize your Insurance</h2>
+          </div>
+          
+          <div class="form-container">
+          <form class="w3-container" method="post" action="/process_criteria">
+            <p>
+            <label>Number of times you visit a doctor</label>
+            <input class="w3-input" type="text" name="doc_visit_cnt" value=""></p>
+            <p>
+            <label>Number of times you visit a specialist</label>
+            <input class="w3-input" type="text" name="spec_visit_cnt" value=""></p>
+            <p>
+            <label>Household Type</label>
+            {{!-- <input class="w3-input" type="text" name="deductible" value=""></p> --}}
+            <select class="w3-input" name="household_type" onchange="" id1="">
+              <option></option>
+              <option value="Single">Single</option>
+              <option value="Pair">Pair</option>
+              <option value="Family">Family</option>
+            </select>
+            <p>
+            <label>Do you need maintenance drugs?</label>
+            <select class="w3-input" name="main_drug_req" onchange="" id1="">
+              <option></option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+            <p>
+            <label>Do you need immunization for kids?</label>
+            <select class="w3-input" name="imm_kids_req" onchange="" id1="">
+              <option></option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+            <p>
+            
+            <br/>
+            <p><button type="submit" class="button1">Save</button></p>
+            
+          </form>
+          </div>
+
+</main>

@@ -1,0 +1,45 @@
+<main>
+
+  {{!-- <h1>MediDesk</h1> --}}
+  {{!-- <br/> --}}
+  {{!-- <p>
+      Hey, I have created this website with the intention to find people on the server. Do you want to help me do it? Just enter the first or last name that you want to search for in the search box, hit Go and watch the magic happen. Go on, give it a try.
+  </p> --}}
+
+<br/> 
+
+<div class="w3-container medi-yellow">
+            <h2>Create an Instrument</h2>
+            {{!-- <p class="extra"><a href="/login">(Already have an account? Login</a>)</p> --}}
+          </div>
+          
+          <div class="form-container">
+          <form class="w3-container" method="post" action="/instruments">
+            {{!-- <input type="hidden" name="id" value="{{user._id}}"> --}}
+            <p>
+            <label>Instrument Name</label>
+            <input class="w3-input" type="text" name="inst_name" value=""></p>
+            <p>
+            <label>Premium</label>
+            <input class="w3-input" type="text" name="premium" value=""></p>
+            <p>
+            <label>Deductible</label>
+            <input class="w3-input" type="text" name="deductible" value=""></p>
+            <p>
+            <label>Copayment</label>
+            <input class="w3-input" type="text" name="copayment" value=""></p>
+            <p>
+            <label>Coinsurance</label>
+            <input class="w3-input" type="text" name="coinsurance" value=""></p>
+            <p>
+            <label>Maximum out-of-pocket</label>
+            <input class="w3-input" type="text" name="out_of_pocket_limit" value=""></p>
+            <p>
+            
+            <br/>
+            <p><button type="submit" class="button1">Save</button></p>
+            
+          </form>
+          </div>
+
+</main>

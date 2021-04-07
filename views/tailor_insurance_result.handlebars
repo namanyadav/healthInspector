@@ -1,0 +1,71 @@
+<main>
+
+<br/> 
+
+<div class="w3-container medi-yellow">
+            <h2>Top choices for you</h2>
+          </div>
+          
+          <div class="">
+
+            <table id="" class="info_table">
+              <tr>
+                <td># Doctor visit:</td>
+                <td>{{input.docVisitCnt}}</td>
+              </tr>
+              <tr>
+                <td># Specialist visit:</td>
+                <td>{{input.specVisitCnt}}</td>
+              </tr>
+              <tr>
+                <td>Household Type:</td>
+                <td>{{input.householdType}}</td>
+              </tr>
+              <tr>
+                <td>Maintenance drugs required:</td>
+                <td>{{input.mainDrugsReq}}</td>
+              </tr>
+              <tr>
+                <td>Kids immunization required:</td>
+                <td>{{input.immKidsReq}}</td>
+              </tr>
+              
+            </table>
+            {{!-- {{criteriaRes}} --}}
+
+            <br>
+            
+
+            <table class="info_table">
+              
+              <tr>
+                <th>Insurance Provider</th>
+                <th>Premium</th>
+                <th>Deductible</th>
+                <th>Copayment</th>
+                <th>Coinsurance</th>
+                <th>Out of pocket limit</th>
+                <th>Annual Cost</th>
+              </tr>
+              {{#each criteriaRes}}
+              <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.premium}}</td>
+                <td>{{this.deductible}}</td>
+                <td>{{this.copayment}}</td>
+                <td>{{this.coinsurance}}</td>
+                <td>{{this.outOfPocketLimit}}</td>
+                <td>{{this.annualTotalCost}}</td>
+              </tr>
+              {{/each}}
+            </table>
+            <br>
+
+              {{!-- <option value="{{this._id}}" {{#if this.selected}} selected {{/if}}>{{this.fname}} {{this.lname}}</option> --}}
+            
+            
+
+          
+          </div>
+
+</main>
